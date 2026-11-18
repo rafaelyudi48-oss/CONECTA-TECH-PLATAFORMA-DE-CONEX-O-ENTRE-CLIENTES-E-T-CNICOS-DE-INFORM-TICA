@@ -4,151 +4,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecta Tech</title>
+    <meta name="description" content="Conecta Tech - Encontre profissionais de tecnologia e resolva seus problemas de informática.">
+    <title>Conecta Tech | Soluções em Tecnologia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="topo">
-    <a class="logo" href="#inicio">CT Conecta<span>Tech</span></a>
+    <!-- NAVEGAÇÃO -->
+    <header class="header" id="inicio">
+        <div class="container navbar">
 
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#contato">Contato</a>
-    </nav>
-</header>
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">C</span>
+                <span>Conecta<span class="logo-highlight">Tech</span></span>
+            </a>
 
-<main>
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#profissionais">Profissionais</a>
+                <a href="#sobre">Sobre nós</a>
+            </nav>
 
-<section class="hero" id="inicio">
-    <div>
-        <small>TECNOLOGIA QUE APROXIMA</small>
-        <h1>Seu problema com tecnologia pode ter uma <em>solução.</em></h1>
+            <div class="nav-actions">
+                <a href="#login" class="btn-login">Entrar</a>
+                <a href="#cadastro" class="btn btn-small">Cadastrar</a>
+            </div>
 
-        <p>
-            Uma plataforma para aproximar pessoas que precisam
-            de assistência em informática dos profissionais
-            que oferecem esses serviços.
-        </p>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                ☰
+            </button>
+        </div>
+    </header>
 
-        <a class="botao" href="#servicos">Conhecer serviços</a>
-        <a class="botao claro" href="#sobre">Saiba mais</a>
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        <span class="status-dot"></span>
+                        CONECTANDO PESSOAS E TECNOLOGIA
+                    </span>
+
+                    <h1>
+                        A tecnologia resolve.
+                        <span class="gradient-text">A conexão começa aqui.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Encontre profissionais de informática qualificados para
+                        resolver seus problemas. Simples, rápido e sem complicação.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#profissionais" class="btn">
+                            Encontrar técnico <span>→</span>
+                        </a>
+
+                        <a href="#servicos" class="btn btn-outline">
+                            Explorar serviços
+                        </a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <strong>Fácil</strong>
+                            <span>de encontrar</span>
+                        </div>
+
+                        <div class="trust-divider"></div>
+
+                        <div class="trust-item">
+                            <strong>Prático</strong>
+                            <span>de solicitar</span>
+                        </div>
+
+                        <div class="trust-divider"></div>
+
+                        <div class="trust-item">
+                            <strong>Conectado</strong>
+                            <span>ao profissional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-glow"></div>
+
+                    <div class="tech-card main-tech-card">
+                        <div class="tech-card-top">
+                            <span class="tech-badge">CONECTA TECH</span>
+                            <span class="tech-status">● Online</span>
+                        </div>
+
+                        <div class="tech-illustration">
+                            <div class="monitor">
+                                <div class="monitor-screen">
+                                    <div class="screen-code">
+                                        <span></span><span></span><span></span>
+                                        <div class="code-line"></div>
+                                        <div class="code-line short"></div>
+                                        <div class="code-line medium"></div>
+                                        <div class="code-line"></div>
+                                    </div>
+                                </div>
+                                <div class="monitor-neck"></div>
+                                <div class="monitor-base"></div>
+                            </div>
+
+                            <div class="floating-symbol symbol-one">&lt;/&gt;</div>
+                            <div class="floating-symbol symbol-two">✦</div>
+                            <div class="floating-symbol symbol-three">⌘</div>
+                        </div>
+
+                        <div class="tech-card-footer">
+                            <div>
+                                <strong>Tecnologia sem complicação</strong>
+                                <p>O profissional certo para sua necessidade.</p>
+                            </div>
+                            <span class="card-arrow">↗</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-top">
+                        <span class="floating-icon">✓</span>
+                        <div>
+                            <strong>Conexão simplificada</strong>
+                            <small>Cliente e profissional</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-bottom">
+                        <span class="floating-icon purple">⌘</span>
+                        <div>
+            <strong>Suporte tecnológico</strong>
+                            <small>Em um só lugar</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BUSCA -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-box">
+                    <div class="search-text">
+                        <span class="search-icon">⌕</span>
+                        <div>
+                            <label for="searchInput">O que você precisa resolver?</label>
+                            <input type="text" id="searchInput"
+                                   placeholder="Ex: computador lento, internet, formatação...">
+                        </div>
+                    </div>
+
+                    <div class="search-divider"></div>
+
+                    <div class="search-location">
+                        <span>⌖</span>
+                        <div>
+                            <label for="locationInput">Localização</label>
+                            <input type="text" id="locationInput"
+                                   placeholder="Sua cidade">
+                        </div>
+                    </div>
+
+                    <button class="btn search-button" id="searchButton">
+                        Buscar profissionais <span>→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section class="section services-section" id="servicos">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">NOSSOS SERVIÇOS</span>
+                        <h2>Tecnologia para <span class="gradient-text">todas as necessidades.</span></h2>
+                        <p>Encontre a solução ideal para o seu problema.</p>
+                    </div>
+
+                    <a href="#profissionais" class="text-link">
+                        Ver profissionais <span>→</span>
+                    </a>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon purple-bg">⌘</div>
+                        <h3>Manutenção</h3>
+                        <p>Diagnóstico e solução de problemas em computadores e notebooks.</p>
+                        <a href="#profissionais" class="service-link">Encontrar técnico →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon blue-bg">⚙</div>
+                        <h3>Formatação</h3>
+                        <p>Instalação e configuração de sistemas operacionais.</p>
+                        <a href="#profissionais" class="service-link">Encontrar técnico →</a>
+                    </article>
+
+                    <article class="service-card">
+                <div class="service-icon cyan-bg">⇧</div>
+                        <h3>Montagem de PC</h3>
+                        <p>Montagem, upgrades e escolha de componentes para seu computador.</p>
+                        <a href="#profissionais" class="service-link">Encontrar técnico →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon pink-bg">⌁</div>
+                        <h3>Redes e Internet</h3>
+                        <p>Configuração de Wi-Fi, roteadores e conexões de rede.</p>
+                        <a href="#profissionais" class="service-link">Encontrar técnico →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon orange-bg">▣</div>
+                        <h3>Instalação de programas</h3>
+                        <p>Instalação e configuração de softwares para seu dia a dia.</p>
+                        <a href="#profissionais" class="service-link">Encontrar técnico →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon green-bg">◉</div>
+                        <h3>Suporte técnico</h3>
+                        <p>Orientação e ajuda para resolver dificuldades tecnológicas.</p>
+                        <a href="#profissionais" class="service-link">Encontrar técnico →</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFISSIONAIS -->
+        <section class="section professionals-section" id="profissionais">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-label">PROFISSIONAIS</span>
+                        <h2>Quem pode <span class="gradient-text">te ajudar?</span></h2>
+                        <p>Conheça especialistas e encontre o suporte que procura.</p>
+                    </div>
+                </div>
+
+                <div class="filter-bar">
+                    <button class="filter-button active" data-filter="todos">Todos</button>
+                    <button class="filter-button" data-filter="manutencao">Manutenção</button>
+                    <button class="filter-button" data-filter="redes">Redes</button>
+                    <button class="filter-button" data-filter="montagem">Montagem</button>
+                    <button class="filter-button" data-filter="software">Software</button>
+                </div>
+
+                <div class="professionals-grid" id="professionalsGrid">
+
+                    <article class="professional-card" data-category="manutencao">
+                        <div class="professional-avatar avatar-one">T</div>
+                        <span class="professional-tag">Manutenção</span>
+                        <h3>Técnico Demonstrativo 01</h3>
+                        <p class="professional-description">Computadores e notebooks</p>
+                        <div class="professional-rating">★ <span>4.9</span> <small>(avaliação demonstrativa)</small></div>
+                        <div class="professional-info">⌖ Atendimento local</div>
+                        <button class="btn btn-outline professional-button" data-tech="Técnico Demonstrativo 01">Ver perfil</button>
+                    </article>
+
+                    <article class="professional-card" data-category="redes">
+                        <div class="professional-avatar avatar-two">R</div>
+                        <span class="professional-tag">Redes</span>
+                        <h3>Técnico Demonstrativo 02</h3>
+                        <p class="professional-description">Internet e redes domésticas</p>
+                        <div class="professional-rating">★ <span>4.8</span> <small>(avaliação demonstrativa)</small></div>
+                        <div class="professional-info">⌖ Atendimento local</div>
+                        <button class="btn btn-outline professional-button" data-tech="Técnico Demonstrativo 02">Ver perfil</button>
+                    </article>
+
+                    <article class="professional-card" data-category="montagem">
+                        <div class="professional-avatar avatar-three">M</div>
+                        <span class="professional-tag">Montagem</span>
+                        <h3>Técnico Demonstrativo 03</h3>
+                        <p class="professional-description">Montagem e upgrades de PC</p>
+                        <div class="professional-rating">★ <span>5.0</span> <small>(avaliação demonstrativa)</small></div>
+                        <div class="professional-info">⌖ Atendimento local</div>
+                        <button class="btn btn-outline professional-button" data-tech="Técnico Demonstrativo 03">Ver perfil</button>
+            </article>
+
+                    <article class="professional-card" data-category="software">
+                        <div class="professional-avatar avatar-four">S</div>
+                        <span class="professional-tag">Software</span>
+                        <h3>Técnico Demonstrativo 04</h3>
+                        <p class="professional-description">Programas e sistemas</p>
+                        <div class="professional-rating">★ <span>4.7</span> <small>(avaliação demonstrativa)</small></div>
+                        <div class="professional-info">⌖ Atendimento local</div>
+                        <button class="btn btn-outline professional-button" data-tech="Técnico Demonstrativo 04">Ver perfil</button>
+                    </article>
+
+                </div>
+
+                <p class="demo-notice">
+                    Os profissionais, notas e informações exibidos nesta seção são exemplos ilustrativos.
+                </p>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section class="section about-section" id="sobre">
+            <div class="container about-grid">
+
+                <div class="about-visual">
+                    <div class="about-panel">
+                        <div class="about-orbit orbit-one"></div>
+                        <div class="about-orbit orbit-two"></div>
+                        <div class="about-center">
+                            <span>CT</span>
+                        </div>
+                        <div class="about-node node-one">⌘</div>
+                        <div class="about-node node-two">✦</div>
+                        <div class="about-node node-three">↗</div>
+                        <div class="about-node node-four">◎</div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-label">SOBRE O CONECTA TECH</span>
+                    <h2>Conectando problemas a <span class="gradient-text">soluções.</span></h2>
+
+                    <p>
+                        O Conecta Tech nasceu com a proposta de facilitar o acesso
+                        a serviços de informática, aproximando pessoas que precisam
+                        de suporte tecnológico de profissionais que podem ajudá-las.
+                    </p>
+
+                    <p>
+                        Queremos tornar a busca por assistência mais simples,
+                        acessível e organizada, usando a tecnologia para conectar pessoas.
+                    </p>
+
+                    <a href="#cadastro" class="btn">Faça parte da plataforma →</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CADASTRO -->
+        <section class="section join-section" id="cadastro">
+            <div class="container">
+                <div class="join-card">
+                    <div class="join-content">
+                        <span class="section-label">FAÇA PARTE</span>
+                        <h2>Você precisa de ajuda ou é um profissional?</h2>
+                        <p>O próximo passo para resolver seu problema começa aqui.</p>
+
+                        <div class="join-buttons">
+                            <button class="btn" id="clientRegister">Sou cliente →</button>
+                            <button class="btn btn-outline-light" id="techRegister">Sou técnico →</button>
+                        </div>
+                    </div>
+
+                    <div class="join-decoration">
+                        <div class="join-circle circle-large"></div>
+                        <div class="join-circle circle-small"></div>
+                <span class="join-symbol">&lt;/&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo">
+                        <span class="logo-icon">C</span>
+                        <span>Conecta<span class="logo-highlight">Tech</span></span>
+                    </a>
+                    <p>Conectando pessoas, profissionais e soluções tecnológicas.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Plataforma</h4>
+                    <a href="#inicio">Início</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#profissionais">Profissionais</a>
+                    <a href="#sobre">Sobre nós</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <a href="#servicos">Manutenção</a>
+                    <a href="#servicos">Redes</a>
+                    <a href="#servicos">Montagem</a>
+                    <a href="#servicos">Suporte</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Conta</h4>
+                    <a href="#login">Entrar</a>
+                    <a href="#cadastro">Cadastro de cliente</a>
+                    <a href="#cadastro">Cadastro de técnico</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Conecta Tech. Projeto em desenvolvimento.</p>
+                <span>Desenvolvido para conectar pessoas à tecnologia.</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+            <div class="modal-icon">✦</div>
+            <h2 id="modalTitle">Conecta Tech</h2>
+            <p id="modalMessage"></p>
+            <button class="btn modal-action" id="modalAction">Entendi</button>
+        </div>
     </div>
 
-    <aside>
-        <div class="simbolo">⌘</div>
-        <h2>Conectando pessoas.</h2>
-        <p>Facilitando o acesso à assistência técnica.</p>
-        <span>Suporte</span>
-        <span>Manutenção</span>
-        <span>Informática</span>
-    </aside>
-</section>
-
-<section class="secao" id="sobre">
-    <small>QUEM SOMOS</small>
-    <h2>Sobre o <em>Conecta Tech</em></h2>
-
-    <p class="centro">
-        O Conecta Tech é uma proposta de plataforma digital
-        criada para facilitar o contato entre clientes e
-        técnicos de informática. A ideia é reunir informações
-        sobre serviços tecnológicos em um só lugar, ajudando
-        as pessoas a encontrar profissionais e permitindo
-        que técnicos divulguem seu trabalho.
-    </p>
-</section>
-
-<section class="secao fundo" id="servicos">
-    <small>O QUE VOCÊ PROCURA?</small>
-    <h2>Serviços de <em>informática</em></h2>
-
-    <p>Conheça alguns exemplos de serviços disponíveis.</p>
-
-    <div class="grade">
-
-        <article>
-            <b>⚙</b>
-            <h3>Manutenção</h3>
-            <p>Verificação e manutenção de computadores e equipamentos.</p>
-        </article>
-
-        <article>
-            <b>▣</b>
-            <h3>Formatação</h3>
-            <p>Reinstalação e configuração de sistemas operacionais.</p>
-        </article>
-
-        <article>
-            <b>⌘</b>
-            <h3>Instalação de programas</h3>
-            <p>Instalação e configuração de softwares.</p>
-        </article>
-
-        <article>
-            <b>◉</b>
-            <h3>Suporte técnico</h3>
-            <p>Orientação para resolver dificuldades com tecnologia.</p>
-        </article>
-
-    </div>
-</section>
-
-<section class="secao" id="como-funciona">
-    <small>SIMPLES E DIRETO</small>
-    <h2>Como a plataforma <em>funciona</em></h2>
-
-    <div class="passos">
-
-        <article>
-            <b>01</b>
-            <h3>Encontre</h3>
-            <p>O cliente identifica o serviço de informática de que precisa.</p>
-        </article>
-
-        <article>
-            <b>02</b>
-            <h3>Conheça</h3>
-            <p>Consulta as informações dos serviços e dos profissionais divulgados.</p>
-        </article>
-
-        <article>
-            <b>03</b>
-            <h3>Entre em contato</h3>
-            <p>Cliente e profissional podem combinar o atendimento diretamente.</p>
-        </article>
-
-    </div>
-
-    <p class="nota">
-        Esta é uma versão demonstrativa da proposta do projeto.
-    </p>
-</section>
-
-<section class="contato" id="contato">
-    <small>FALE CONOSCO</small>
-    <h2>Vamos conectar você à tecnologia?</h2>
-
-    <p>
-        Este espaço poderá receber os canais de contato
-        do projeto e dos profissionais cadastrados.
-    </p>
-
-    <a class="botao branco" href="mailto:contato@conectatech.com">
-        Enviar e-mail
-    </a>
-</section>
-
-</main>
-
-<footer>
-    <strong>Conecta<span>Tech</span></strong>
-    <p>Projeto acadêmico de desenvolvimento web · 2026</p>
-    <p>© 2026 Conecta Tech.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
